@@ -1,0 +1,131 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /*border:dashed;*/
+    }
+
+body {
+     /*background-image: url("assets/Pixel.png"); */
+    background-color: rgb(21, 24, 25);
+    font-family: 'Archivo', sans-serif;
+  }
+/* the main container */
+
+.card{
+ /*width:70%;*/
+ /*height:100%;*/
+ width:200px;
+ height: 350px;
+  margin: 3em auto;
+  overflow: hidden;
+  box-shadow: 2px 5px 15px 0px #17161694;
+  background-color:rgb(255, 255, 255);
+  border-radius: 25px;
+}
+
+#front-card{
+
+  background-image: url("assets/SVG/new\ img.svg"); 
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+.front-card{
+  background-image: url('assets/silent-listen-picture.png');
+  background-position: center;
+  background-size:cover;
+  grid-area:f;
+}
+ 
+#back-card {
+  background-color: rgb(215, 182, 167);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+ /* styling that will just be on the back */
+ .back-card {
+  background-image: url('assets/silent-listen-picture.png');
+  background-position: center;
+  grid-area:b;
+  fill: rgb(21, 24, 25);
+}
+h1{
+  /* to left align text */
+  font-size: 1em;
+  margin-top: 10%;
+  margin-left:20%;
+  
+
+
+}
+
+.back-text {
+  margin-top: 25%;
+  margin-left:20%;
+}
+
+h3{
+  font-size: 2em;
+  font-family: 'Ubuntu', sans-serif;}
+h2{
+  font-size: 1em;
+  font-family:'Archivo', sans-serif;}
+h5{
+  font-size: 1em;
+  font-family: 'Archivo', sans-serif;}
+  
+
+
+  .icon-container{
+    /*controls the width of the overall container*/
+    width:100%;
+    /* what enables the use of css grid */
+    display:grid;
+    position: relative;
+  width: 15%;
+  /* margin: auto; */
+  left: 6px;
+  /* bottom:50px; */
+   top: -60px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+  /*what the svg files will be styled as on page layout*/
+  svg{
+    fill:yellowgreen;
+    /* width:100%; */
+    /* height:auto; */
+    /* margin: 0 auto */
+  }
+
+svg{
+  fill:rgb(217, 88, 121);
+}
+
+svg:hover{
+  fill:rgb(90, 139, 172);
+  animation: swing; /* referring directly to the animation's @keyframe declaration */
+animation-duration: 3s; /* don't forget to set a duration! */
+}
+@media only screen and (min-width: 600px) {
+  body {
+    background-color: rgb(21,24,25)
+  }
+  .card{
+  width:40%;
+  /* width:400px; */
+/* height:750px; */
+}
+}
+@media only screen and (min-width: 800px) {
+  body {
+    background-color: rgb(21,24,25);
+  }
+  .card{
+  width:30%;
+  /* width:400px; */
+  /* height:750px; */
+
+
+}
+}
